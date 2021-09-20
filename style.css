@@ -79,7 +79,7 @@ body {
     border-radius: 10vh;
     border: 1.5vh solid black;
     position: absolute;
-    
+    background-color: black;
 }
 
 footer{
@@ -164,9 +164,3 @@ footer img:hover{
 /* DUŻE PC */
 @media only screen and (min-width: 1200px) {}
 
-@keyframes logo_anim {
-
-from{left:0%} 
-to{left: 40%;}
-
-}
