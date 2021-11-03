@@ -1,49 +1,55 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pl">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Language" content="pl" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="logo.png" type="image/png">
-    <script src="script.js"></script>
     <title>Crasnovia Krasne</title>
 </head>
 
 <body>
 
-    <section id="menu">
+    <header><a href="index.html"><img src="../LOGA PNG/Krasne.png">
+            <p>CRASNOVIA KRASNE</p>
+        </a>
+        <input type="button" value="☰" onclick="show_menu()" />
+    </header>
 
-        <img id="logo" src="logo.png" alt="logo"/>
+    <div class="content">
 
-        <section id="menu_pc">
+        <img src="Terliczka.png">
 
-            <div><p>ZAWODNICY</p></div>
-            <div><p>SPOTKANIA</p></div>
-            <div><p>• LIVE</p></div>
+    </div>
 
-        </section>
+    <div class="menu" id="menu">
 
-        <section id="menu_tel">
-            <p  id="przycisk_menu" onclick="show_menu()">☰ MENU</p>
-        </section>
-        
-    </section>
+        <input type="button" value="☰" onclick="hide_menu()" />
 
-    <section id="home">        
-
-        <section id="zapowiedz"><img src="BIAŁOBRZEGI.png"></section>
-
-    </section>
-
+        <ul>
+            <li>
+                <a></a>
+                <a href="index.html">STRONA GŁÓWNA</a>
+            </li>
+            <li>
+                <a href="/zawodniy/zawodnicy.html">ZAWODNICY</a>
+            </li>
+            <li>
+                <a href="/live/live.html">·LIVE</a>
+            </li>
+            <li>
+                <a href="/terminarz/terminarz.html">TERMINARZ</a>
+            </li>
+        </ul>
+    </div>
     <footer>
-        <a href="https://flycars.pl"><img src="flycars.png" alt="FLYCARS"/></a>
-        <a href="https://kuzio.eu"><img src="Tartak.png" alt="TARTAK KUZIO"/></a>
+        <div class="sponsor"><a href="https://kuzio.eu"><img src="Tartak.png" /></a></div>
+        <div class="sponsor"><a href="https://flycars.pl"><img src="flycars.png" /></a></div>
     </footer>
 
 </body>
+
+<script src='script.js'></script>
 
 </html>
